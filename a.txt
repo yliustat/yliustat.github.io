@@ -1,3 +1,6 @@
-bc
-ddd
-new news
+
+=======
+next batter
+dnak
+jikan
+>>>>>>> master
