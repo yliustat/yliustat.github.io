@@ -15,7 +15,7 @@
 		<meta name="author" content="Dr. Liu Yan" />
 		<meta name="description" content="About" />
 		<meta name="robots" content="all" />
-		<meta name="generator" content="Sandvox 2.10.11" />
+		<meta name="generator" content="Sandvox 2.10.12" />
 		<meta name="viewport" content="width=771" />
 		<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 		<link rel="canonical" href="file:///Users/YanLiu/Documents/yliustat.github.io/Eng/index.html/about.html" />
@@ -156,6 +156,22 @@
 		})
 		});
 		</script>
-		
+		<script src="_Resources/jquery-1.9.1.min.js"></script>
+		<script charset="utf-8" src="https://maps.google.com/maps/api/js?language=en&amp;key=AIzaSyCRMorU0DCLSoFZ-sU5J1PYTvmfw8v1wDM"></script><script charset="utf-8" src="_Resources/jquery.gmap.min.js"></script>
+		<script>
+		$(document).ready(function(){var e=window.devicePixelRatio&&window.devicePixelRatio>1?window.devicePixelRatio:1,t=window.innerWidth>window.innerHeight?screen.height:screen.width;$("span[data-img-src-hr]").each(function(){var n=$(this).data("width"),r=$(this).data("height"),i=$(this).data("alt"),s='<img src="',o=e>1&&n<2*t,u=0,a=$(this)[0].attributes;if(o){s+=$(this).data("img-src-hr")}else{s+=$(this).data("img-src")}s+='"';if(i)s+=' alt="'+i+'"';if(n)s+=' width="'+n+'"';if(r)s+=' height="'+r+'"';for(l=a.length;u<l;u++){var f=a[u].name;if(!f.match(/(data-width|data-height|data-alt|data-img-src)/g)){s+=" "+f+'="'+a[u].value+'"'}}s+=" />";$(this).replaceWith($(s))})})
+		$(document).ready(function () {
+		$('#googlemap').gMap({
+		mapTypeControl: false,
+		zoomControl: true,
+		panControl: false,
+		scaleControl: true,
+		streetViewControl: false,
+		streetViewControl: true,
+		zoom: 14,
+		markers: [{"address":"Kyoto University"}]
+		})
+		});
+		</script>
 	</body>
 </html>
